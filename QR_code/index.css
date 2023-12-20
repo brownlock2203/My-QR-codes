@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+:root{
+    /* Colors */
+    --White : hsl(0, 0%, 100%);
+    --Light_gray : hsl(212, 45%, 89%);
+    --Grayish_blue : hsl(220, 15%, 55%);
+    --Dark_blue : hsl(218, 44%, 22%);
+    
+    /* Body elements */
+    --font-family: 'Outfit';
+    --font-size: 15px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Light_gray);
+    max-width: 1440px;
+    /* height: 600px; */
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    align-items: center;
+}
+
+img{
+    max-width: 17rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* My container_QR */
+    .container_QR{
+        /* border: solid black; */
+        margin: 50px;
+        padding: 20px;
+    }
+
+/* My container */
+    .container{
+        background: var(--White);
+        width: 310px;
+        margin: auto;
+        padding: 15px 15px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        padding-bottom: 25px;
+        /* margin-top: 10vh; */
+    }
+
+    /* My container text */
+        .container .text{
+            margin: 10px;
+        }
+
+        .container h2{
+            font-weight: 1000;
+            color: var(--Dark_blue);
+            margin-bottom: 10px;
+        }
+
+        .container p{
+            font-weight: 400;
+            color: var(--Light_gray);
+        }
+
+
+@media (max-width:375px){
+    /* .body{
+        max-width: 375px;
+    } */
+    .container_QR{
+        margin: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding-top: 40px;
+        /* padding-top: 19vw; */
+    }
+    
+    .container{
+        max-width: 300px;
+    }
+
+    img{
+        max-width: 17rem;
+    }
+}
